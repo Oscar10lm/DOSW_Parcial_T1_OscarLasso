@@ -92,10 +92,9 @@ Los productos base (Sándwich, Ensalada, etc.) pueden ser personalizados con mú
 *   **Open/Closed Principle (OCP):** Podemos añadir nuevos ingredientes extras al menú creando nuevos decoradores, sin modificar el código de los productos base ni de los decoradores existentes.
 *   **Single Responsibility Principle (SRP):** Cada decorador (ingrediente) tiene la única responsabilidad de sumar su propio costo y nombre, dejando al producto base con su comportamiento original.
 
-### 6.3 Diagrama de Clases UML (Builder + Decorator)
+### 6.3 
 
-
-![UML.png](DOSW-ParcialT1/docs/uml/UML.png)
+![Diagrama de clases.png](DOSW-ParcialT1/docs/uml/Diagrama%20de%20clases.png)
 
 
 
