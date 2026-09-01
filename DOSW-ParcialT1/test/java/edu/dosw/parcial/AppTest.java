@@ -1,4 +1,4 @@
 package edu.dosw.parcial;
 
-public class App {
+public class AppTest {
 }
