@@ -94,7 +94,8 @@ Los productos base (Sándwich, Ensalada, etc.) pueden ser personalizados con mú
 
 ### 6.3 
 
-![DiagramaDeClases.png](DOSW-ParcialT1/docs/uml/DiagramaDeClases.png)
+<img width="1307" height="863" alt="image" src="https://github.com/user-attachments/assets/be6a80c4-1ddb-4570-8eda-d048ea539c74" />
+
 
 
 
