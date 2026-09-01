@@ -1,8 +1,11 @@
 package edu.dosw.parcial.universityFoodHub;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ProductBuilder {
     private Product product;
-    private Product extra
+    private Product extra;
 
     public void bandejaUniversitaria () {this.product = new Product("Bandeja Universitaria", ".", 8_500);
     }
@@ -23,7 +26,17 @@ public class ProductBuilder {
 
 
 
-    //public Product build() thorws ProductException {}
+    public Product build() thorws ProductException {
+        if (product == null)  throw new ProductException(ProductException.PRODUCT_REQUIRED);
+
+        List<Plate> plates = new ArrayList<>();
+        plates.add(product);
+
+        if (extra != null)       plates.add(extra);
+
+        return new Product(plates);
+
+    }
 
 
 }

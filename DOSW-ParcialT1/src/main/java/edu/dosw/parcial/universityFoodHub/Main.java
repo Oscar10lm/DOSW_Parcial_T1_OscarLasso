@@ -8,9 +8,14 @@ public class Main {
     }
 
     public static void run(Scanner scanner){
-        try{
+        try {
+            UniversityFood universityFood = new UniversityFood(scanner);
+            Product product = universityFood.makeProduct();
+            product.display();
+        }catch(ProductException e){
 
         }
+
     }
 
 }
