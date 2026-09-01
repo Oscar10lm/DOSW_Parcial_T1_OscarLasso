@@ -1,6 +1,6 @@
 package edu.dosw.parcial.universityFoodHub;
 
-public final class Plate {
+public final class Plate implements Consumible {
     private final String name;
     private final int price;
 
@@ -8,7 +8,10 @@ public final class Plate {
         this.name = name;
         this.price = price;
     }
+    
+    @Override
     public String getName() {return name;}
+    
+    @Override
     public int getPrice() {return price;}
-
 }

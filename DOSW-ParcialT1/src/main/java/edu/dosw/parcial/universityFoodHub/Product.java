@@ -6,14 +6,30 @@ import java.util.List;
 
 public class Product {
 
-    private final List<Plate> plates;
-    Product(List<Plate> plates) {
+    private final List<Consumible> plates;
+    private final String tipoEntrega;
+    
+    Product(List<Consumible> plates, String tipoEntrega) {
         this.plates = Collections.unmodifiableList(new ArrayList<>(plates));
+        this.tipoEntrega = tipoEntrega;
     }
-    public List<Plate> getPlates(){return plates;}
-    public int getTotalPrice(){
-        return plates.stream().mapToInt(Plate::getPrice).sum();
+    
+    public List<Consumible> getPlates() { return plates; }
+    
+    public String getTipoEntrega() { return tipoEntrega; }
+    
+    public int getTotalPrice() {
+        return plates.stream().mapToInt(Consumible::getPrice).sum();
     }
-
+    
+    public void display() {
+        System.out.println("=== RESUMEN DEL PEDIDO ===");
+        System.out.println("Método de entrega: " + tipoEntrega);
+        System.out.println("Platos:");
+        for (Consumible plate : plates) {
+            System.out.println(" - " + plate.getName() + " ($" + plate.getPrice() + ")");
+        }
+        System.out.println("TOTAL A PAGAR: $" + getTotalPrice());
+        System.out.println("==========================");
+    }
 }
-
