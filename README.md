@@ -117,3 +117,16 @@ https://github.com/Oscar10lm/Bitacora.git
 # Figma
 
 ![img.png](DOSW-ParcialT1/docs/images/evidenciaFigma.png)
+
+---
+# Continuación: Parcial T2 (Microservicio Spring Boot + MongoDB)
+
+Para la continuación del parcial hacia una arquitectura de microservicio empresarial con Spring Boot 3.3.4, MongoDB, Docker, Swagger y CI/CD, consultar la carpeta correspondiente:
+
+👉 **[Ver documentación completa de la Solución T2](T2/README.md)**
+
+- **Módulo:** [`T2`](T2/)
+- **Endpoints:** `/api/v1/health`, `/api/v1/menu`, `/api/v1/orders`
+- **Patrones:** Builder + Decorator integrados con Spring Data MongoDB y validaciones de negocio.
+- **Pruebas:** 31 tests unitarios y de integración con JaCoCo (`mvn test` en carpeta `T2`).
+

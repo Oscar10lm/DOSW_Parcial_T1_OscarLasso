@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: DOSW-ParcialT2-Test
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.mongo.MongoDataAutoConfiguration
+      - org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
+jwt:
+  secret: dGhpc2lzYXNlY3JldGtleXRoYXRtdXN0YmVhdGxlYXN0NDRjaGFyc2xvbmc=
+  expiration-ms: 3600000
